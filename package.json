@@ -1,0 +1,31 @@
+{
+  "name": "vue-router-ministart",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.15.0",
+    "axios": "^0.21.1",
+    "babel-loader": "^8.2.2",
+    "concurrently": "^6.2.1",
+    "connect-history-api-fallback": "^1.6.0",
+    "express": "^4.17.1",
+    "html-webpack-plugin": "^5.3.2",
+    "nodemon": "^2.0.12",
+    "vue": "^2.6.14",
+    "vue-loader": "^15.9.8",
+    "vue-router": "^3.5.2",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "express": "nodemon server",
+    "webpack": "webpack --config ./client/webpack.config.js --watch",
+    "start": "concurrently \"npm run express\" \"npm run webpack\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
